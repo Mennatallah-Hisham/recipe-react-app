@@ -1,0 +1,33 @@
+
+.secRecipe{
+
+  
+    margin:10rem auto;
+}
+
+.secRecipe h2{
+    text-align: center;
+    text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+color: #E16120;
+}
+.secRecipe ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+
+@media (min-width:768px){
+    .secRecipe ul{
+
+      
+        gap:6rem;
+    }
+
+
+}
