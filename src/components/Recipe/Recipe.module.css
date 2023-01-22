@@ -1,14 +1,18 @@
 
 .recipeCard{
-    width:15rem;
+    width:30rem;
     /* border: 2px solid #E16120; */
     padding-bottom: 2rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
 }
 
 .recipeCard img{
     width:100%;
+    height:25rem;
 }
+
+
 .title{
     font-size: 1.6rem;
  
@@ -30,16 +34,3 @@
 }
 
 
-@media (min-width:468px){
-    .recipeCard{
-        width:20rem;
-       
-    }  
-}
-
-@media (min-width:768px){
-    .recipeCard{
-        width:30rem;
-       
-    }  
-}

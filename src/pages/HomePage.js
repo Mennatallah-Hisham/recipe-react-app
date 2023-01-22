@@ -1,19 +1,18 @@
 import style from "./HomePage.module.css";
 import Categories from "../components/Homepg/Categories";
 import Recipes from "../components/Recipe/Recipes";
+import Search from "../components/Homepg/Search";
+import { useSelector } from "react-redux";
 const HomePage =()=>{
-
-    return(
+    const recipes =useSelector(state=>state.home.recipes);
+    return( 
         <main>
             <header className={style.header}>
-            <form className={style.searchForm}>
-                <input type="text"placeholder="search ..."></input>
-                <button>search</button>
-            </form>
+            <Search/>
             </header>
             <Categories/>
-
-            <Recipes/>
+           
+            <Recipes recipes={recipes}/>
         </main>
     )
     

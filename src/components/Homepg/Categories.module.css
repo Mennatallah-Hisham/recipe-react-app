@@ -5,13 +5,7 @@
     margin:10rem auto;
 }
 
-.secCat h2{
-    text-align: center;
-    text-transform: capitalize;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-color: #E16120;
-}
+
 .secCat ul{
 
     display: flex;

@@ -1,0 +1,147 @@
+
+.wrapper{
+    background-color: #e1602051;
+
+}
+.recipeContainer{
+   background-color: #fff;
+   
+width:90%;
+max-width: 140rem;
+margin-inline:auto;
+text-align: center;
+height:100vh;
+overflow-y: scroll;
+}
+.recipeContainer img{
+  
+    height: 20rem;
+    max-width: 100%;
+}
+.recipeContainer h1{
+   color: #E16120;
+   text-transform: capitalize;
+   margin:1.5rem 0;
+}
+
+.headCont{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+}
+.headCont button{
+    margin-top:0;
+}
+
+.headCont p{
+    color:rgb(22, 22, 22);
+ 
+    font-size: 1.4rem;
+}
+.headCont span{
+    color:#E16120;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding:0 0.2rem;
+}
+
+.ingredients{
+    margin-top:1.5rem;
+    text-align: left;
+    font-size: 1.6rem;
+    color:rgb(22, 22, 22);
+    width:90%;
+    max-width: 60rem;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+ 
+}
+.ingredients h2{
+    font-size: 1.8rem;
+    margin:1.5rem auto;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    color:#E16120;
+
+}
+.ingredients ul{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+}
+.ingredients li{
+    display: flex;
+    gap:0.2rem;
+    align-items: center;
+  
+}
+.ingredients li::before{
+    content: " ";
+    display: block;
+    width:1rem;
+    height: 1rem;
+    background-color: #E16120;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+.bold:nth-child(2){
+    margin-right: 0.5rem;
+}
+@media (min-width:608px){
+    .ingredients h2{
+        margin:3rem 0;
+    }
+
+    .ingredients ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items:stretch;
+            }
+    
+}
+
+
+@media (min-width:768px){
+    .recipeContainer{
+   
+    width:70%;
+    
+    }
+    .recipeContainer h1{
+        font-size: 3rem;
+        margin:3rem 0;
+    } 
+    .headCont{
+        gap:3rem;
+    }
+
+    .headCont p{
+     
+     
+        font-size: 1.8rem;
+    }
+    .headCont span{
+    
+        font-size: 2rem;
+    
+    }
+    
+    .recipeContainer img{
+        width:50rem;
+        height: 25rem;
+    }
+
+  
+
+   
+    
+
+}

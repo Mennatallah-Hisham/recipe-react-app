@@ -1,16 +1,31 @@
 
+import { useState ,useEffect } from 'react';
 import style from './Category.module.css';
-const Category =()=>{
+const Category =(props)=>{
+
+   
+    const changeRecipe=()=>{
+       
+      props.changeRecipeHandler(props.title);
+        
+    }
+    
+   
+
+
     return(
-        <article className={style.categoryCard}>
+        <button onClick={changeRecipe}>
+  <article className={style.categoryCard} >
            
          
-            {/* <img src= "../../../public/imgs/pizza2.jpg" alt=""/> */}
-            <img src={require("../../images/pizza2.jpg")} alt=""/>
-        
-            <h3>pizza</h3>
-        </article>
-    )
+           <img src={props.src} alt=""/>
+           
+       
+           <h3>{props.title}</h3>
+       </article>
+        </button>
+   )
+      
 }
 
 

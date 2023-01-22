@@ -1,15 +1,20 @@
 
 import style from "./Nav.module.css";
+import { Link } from "react-router-dom";
 const Nav =()=>{
     return(
         <div className={style.mainHeader}>
-            <p className={style.logo}>your recipe</p>
+            
+            <Link to="/">
+                <p className={style.logo}>Your Recipe</p>
+                </Link>
            
             <nav className={style.nav}>
-                <ul>
-                    <li>home</li>
-                    <li>favorites</li>
-                </ul>
+               
+                        <Link to="/saved">
+                        saved
+                        </Link>
+                       
             </nav>
         </div>
     )

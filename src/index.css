@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -28,5 +29,58 @@ ul{
 section{
   width:95%;
   margin-inline:auto;
-  border:1px solid green;
+
 }
+
+.heading-secondary{
+  text-transform: capitalize;
+  text-align: center;
+
+  color:#E16120;
+  margin:1rem 0;
+
+  font-size: 3rem;
+  margin-bottom: 3rem;
+color: #E16120;
+
+}
+
+button{
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+.btn{
+  display: inline-block;
+
+ margin-top:1.5rem;
+ border: 2px solid #E16120;
+ color:#E16120;
+ padding:0.3rem 2rem;
+ font-size: 1.6rem;
+ margin-right:0;
+
+transition: all 0.4s;
+
+
+}
+
+
+.btn:hover{
+  color:white;
+  background-color: #E16120;
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .error{
+    color:rgb(102, 98, 98);
+    text-align: center;
+    text-transform:capitalize;
+    font-size: 1.6rem;
+  }

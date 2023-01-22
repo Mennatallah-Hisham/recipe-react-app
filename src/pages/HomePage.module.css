@@ -4,71 +4,12 @@
 
     background-position: center;
     background-size: cover;
-  height: 90vh;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
     
 }
 
-.searchForm{
-    background-color: #fff;
-    padding:1rem  0.5rem;
-    width:32rem;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.searchForm input{
-    border:none;
-    outline:none;
-    border-bottom: 2px solid #E16120;
-    width:23rem;
-    
-}
-
-.searchForm button{
-    
-    background-color: transparent;
-    padding:0.5rem 1rem;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 1.4rem;
-    border:2px solid #E16120;
-    color:#E16120
-
-
-}
-
-.searchForm button:hover{
-    background-color: #e16020c3;
-    color:#fff;
-}
-
-
-@media (min-width:768px){
-
-    .searchForm{
-      
-        padding:1rem  2rem;
-        width:50rem;
-        
-    }
-    .searchForm input{
-       
-        width:32rem;
-        
-    }
-    .searchForm button{
-    
-      
-        padding:0.8rem 3rem;
-  
-        font-weight: 600;
-        font-size: 1.6rem;
-      
-    
-    
-    }
-
-}
