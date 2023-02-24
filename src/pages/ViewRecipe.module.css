@@ -11,7 +11,7 @@ max-width: 140rem;
 margin-inline:auto;
 text-align: center;
 height:100vh;
-overflow-y: scroll;
+overflow-y:auto;
 }
 .recipeContainer img{
   

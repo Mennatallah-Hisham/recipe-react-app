@@ -2,6 +2,8 @@ import { useEffect ,useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { savedActions } from "../store/SavedRecipes";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import style from './ViewRecipe.module.css';
 const ViewRecipe = ()=>{
     const {id}=useParams();
@@ -43,6 +45,10 @@ const ViewRecipe = ()=>{
     }
     return (
    <div className={style.wrapper}>
+    <ToastContainer 
+    autoClose={1500} 
+    theme="light"
+    />
 
    
         <main className={style.recipeContainer}>

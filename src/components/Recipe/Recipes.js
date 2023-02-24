@@ -8,7 +8,7 @@ const Recipes = (props)=>{
 
     return(
    
-        <section className={style.secRecipe}>
+        <section className={style.secRecipe} id="recipes">
             <ul>{
                props.recipes.map((recipe)=><li key={recipe.id}>
                     

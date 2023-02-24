@@ -36,14 +36,25 @@ const  searchRef= useRef();
         e.preventDefault();
    
         getRecipes(searchRef.current.value);
+        handleScroll();
 
+    }
+    const handleScroll=()=>{
+        const element = document.getElementById('recipes');
+        if (element) {
+         
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     return(
     
         <form className={style.searchForm} onSubmit={fromHandler}>
         <input type="text"placeholder="search ..." ref={searchRef}></input>
+      
+
         <button>search</button>
+      
     </form>
     )
 }

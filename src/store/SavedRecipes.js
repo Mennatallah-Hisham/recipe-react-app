@@ -1,9 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const initialState ={
     recipes:[],
 }
+
+const savedNotify =()=>toast("recipe saved" ,{
+    position: toast.POSITION.TOP_CENTER,
+
+    theme:'light'
+});
+const alreadySavedNotify =()=>toast("recipe is already saved",{
+    position: toast.POSITION.TOP_CENTER,
+
+    theme:'light'
+});
+
+const unSaveNotify =()=>toast("recipe unsaved",{
+    position: toast.POSITION.TOP_CENTER,
+
+    theme:'light'
+});
 
 const savedSlice = createSlice({
     name:"savedSlice",
@@ -16,10 +34,11 @@ const savedSlice = createSlice({
             const RecipeId =action.payload.id;
             const exists =state.recipes.some((r)=>r.id===RecipeId);
             if(exists){
-                alert("recipe is already saved");
+              alreadySavedNotify();
             }else{
                 state.recipes.push(newRecipe);
-                alert(" recipe saved ");
+              savedNotify();
+               
             }
             
             
@@ -31,7 +50,7 @@ const savedSlice = createSlice({
         removeRecipe(state,action){
        
           state.recipes= state.recipes.filter(recpie=>recpie.id!==action.payload);
-     
+     unSaveNotify();
             
 
         }
